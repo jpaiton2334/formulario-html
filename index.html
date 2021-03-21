@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pagina</title>
+</head>
+
+<body id="body">
+   <main class="container ">
+       <div class="row sticky-top">
+           <div class="col-12 " id="nav" >
+            <ul class="nav justify-content-center ">
+                <li class="nav-item " >
+                  <a class="nav-link active text-warning" href="#" id="inicio">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-warning" href="https://github.com/jpaiton2334" target="_blank">GITHUB</a>
+                </li>
+              
+                <li class="nav-item">
+                  <a class="nav-link text-warning" type="buttton" data-toggle="modal" data-target="#staticBackdrop">CONTACTO</a>
+                </li>
+              
+              </ul>
+           </div>
+       </div>
+
+  
+
+<!-- Modal -->
+<div class="modal fade text-dark " id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" >
+    <div class="modal-content" id="modalpo">
+      <div class="modal-header">
+        <h5  class="modal-title" id="staticBackdropLabel">Contactame</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="form-group ">
+      <form name="contact" method="POST" data-netlify="true" class="form-group font-weight-bold">
+        <p>
+          <label>Nombre: <input type="text" name="name"  class="form-control"/></label>   
+        </p>
+        <p>
+          <label> Email: <input type="email" name="email" class="form-control" id="email" /></label>
+        </p>
+        <div id="emailRatificar"></div>
+       
+        <p>
+          <label>Mensaje: <textarea name="message" class="form-control " maxlength="200" rows="4" cols="40"></textarea></label>
+        </p>
+        <p>
+        
+          <button type="button" data-toggle="modal" class="btn btn-primary btn-lg btn-block" data-target="#modalCreate"  id="botonContacto">Enviar</button>
+         
+        </p>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+       <div class="row">
+           <div class="col-12 col-lg-9 bg-secundary border">
+           <div class="row">
+               <div class="col-12 col-md-12 bg-warning text-dark" >
+                 <p>Soy Juan Pablo Peralta Casanova y esta es mi pagína de presentacion para compartirles las tecnologias 
+                     que manejo y mi experiencia en el area.
+                 </p>
+               </div>
+               <div class="col-12 col-md-9  text-light border" id="elsitio">
+                <p>El sitio esta creado con HTML, CSS, JS y Boostrap, si gustas cambia el tamaño de la pantalla y verás como se adapta a cada tipo de dispositivo.</p>
+               <p>Si pinchas en Github puedes ir a ver  mis repositorios.</p>
+                <p>En la imagenes del costado derecho esta aplicado un estilo css para acercar las imagenes.</p>
+              </div>
+              <div class="col-12 col-md-3 bg-dark text-warning text-center border" id="teaburre" >
+               <h3>Te aburre el texto?</h3>
+               <p>cambialos pinchando el boton</p>
+
+               <div class="btn-group " role="group" id="botones">
+                <button type="button" class="btn btn-secondary" id="volver">volver</button>
+             
+                <button type="button" class="btn btn-secondary" id="boton">cambiar</button>
+
+              </div>
+              </div>
+              <div class="col-12 text-light border" id="cambiar">
+                 <h3>Haz click en el boton para cambiar el texto</h3>
+                 
+              </div>
+              <div class="col-12 bg-warning border">
+                  <p>Te cuento un poco: estudie en el instituto  hfjdhfjdhfjhf (tos), y me dieron unas bases en el backend de java y en el front de HTML, CSS y JS las cuales como se
+                    puede apreciar estoy aplicando algunas, en el trascurso del tiempo me fui inclinando al front-end ya que el diseño de app me gusta bastante.
+                    he aprendido maquetación en boostrap y como interactuar con el DOM en js.
+                  </p>
+                  <div class="row">
+                 <div class="col-12 col-lg-9 bg-warning">
+                   <img src="jota toty.JPG" alt="" id="jpImg">
+                 </div>
+                 <div class="col-12 col-lg-3 bg-dark text-light border">
+                   <p>En mis tiempos libres me gusta editar fotos y jugar con los colores, he aprendido a usar Photoshop para crear esta imagen
+                     de FIFA 21 incluyendo mi foto.
+                   </p>
+                   <p>Actualmente me encuentro estudiando Vue js, animaciones con canvas y un poco de PHP, la verdad el desarrollo web es un
+                     mundo gigantesto pero de a poco nos vamos convirtiendo en verdaderos profesionales si esto nos apasiona.
+                   </p>
+                 </div>
+                </div>
+                </div>
+           </div>
+           </div>
+           <div class="col-12 col-lg-3 bg-secondary text-warning  justify-content-center border">
+        <p>Les comento que esta pagina esta construida por las siguientes tecnologias.</p>
+        <div class="card-group mt-3 col-12 "style="width: 11rem;" id="cssImg" >
+            <img src="css-3.svg" class="card-img-top" alt="..." >
+          
+          </div>
+          <div class="card-group mt-3 col-12 " style="width: 11rem;" id="htmlImg">
+            <img src="html-5.svg" class="card-img-top" alt="...">
+           
+          </div>
+          <div class="card-group mt-3 col-12" style="width: 11rem;" id="jsImg">
+            <img src="js.svg" class="card-img-top" alt="...">
+           
+          </div>
+         
+           </div>
+           <div class="col-12  navbar  navbar-light  text-light" style="background-color: #0b1270;">
+               <footer id="footer">
+                   <p>2021, Juan Peralta.</p>
+               </footer>
+           </div>
+       </div>
+   </main>
+     <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
