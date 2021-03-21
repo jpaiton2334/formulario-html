@@ -1,25 +1,3 @@
-//validar email 
-var email = document.getElementById('email').value;
-var validar = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
-
-
-var botonContacto = document.getElementById('botonContacto');
-
-
-botonContacto.addEventListener("click", validarCorreo);
-
-function validarCorreo(){
-    var emailRatificar = document.getElementById('emailRatificar');
-    if(!validar.test(email) ){
-       emailRatificar.innerHTML = '<h5>email invalido</h5>';
-
-    }else{
-        emailRatificar.innerHTML = '';
-    }
-}
-
-
-
 
 
 
